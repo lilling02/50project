@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #ddd;
+            /* overflow: hidden; */
+            /* float: left; */
+            /* position: fixed; */
+            /* display: flex;
+            flex-direction: row; */
+        }
+
+        img {
+            width: 300px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- BFC
+        Block formatting context块级格式化上下文形成独立的演染区域内部元素的汶染不会影响外界
+        形成BFC常见的条件
+            浮动元素float不是none
+            绝对定位元素position是absolute或fixed
+            块级元素ovefflow不是visible
+            flex元素
+            inline-block元素
+        应用场景
+            清除浮动等 
+
+        元素脱离了标准的文档流 导致超出了父元素的范围 
+        影响到了别的区域 为解决问题需要bfc提供独立的渲染区域
+    -->
+    <div class="container">
+        <img src="./96dca0e1de17fb757ebaa1aa61a5c41d.jpeg" alt="" class="">
+        <p>关于BFC的理解</p>
+    </div>
+</body>
+
+</html>

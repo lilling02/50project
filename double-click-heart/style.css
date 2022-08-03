@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2Fv2-d73df22d306f557a0d3d313d78f50f84_1440w.jpg%3Fsource%3D172ae18b&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662138525&t=bf8f2775ba100860b1692047960f0f84') no-repeat center center/cover;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 0px 14px 28px black;
+  max-width: 100%;
+  /* 这个定位是为了给点击时候的爱心定位的 */
+  position: relative;
+}
+
+h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: red;
+}
+
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
